@@ -13,6 +13,8 @@
 		0B24B0891CD9C1B9001EF497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B24B0881CD9C1B9001EF497 /* Assets.xcassets */; };
 		0B24B08C1CD9C1B9001EF497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B24B08A1CD9C1B9001EF497 /* LaunchScreen.storyboard */; };
 		0B24B0971CD9C1B9001EF497 /* recentPhotosExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B24B0961CD9C1B9001EF497 /* recentPhotosExampleTests.swift */; };
+		0B24B0A41CD9CC00001EF497 /* photoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B24B0A31CD9CC00001EF497 /* photoCell.swift */; };
+		0B5C62961CDC6680008A11CE /* VCPhotoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5C62951CDC6680008A11CE /* VCPhotoUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		0B24B0921CD9C1B9001EF497 /* recentPhotosExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recentPhotosExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B24B0961CD9C1B9001EF497 /* recentPhotosExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recentPhotosExampleTests.swift; sourceTree = "<group>"; };
 		0B24B0981CD9C1B9001EF497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B24B0A31CD9CC00001EF497 /* photoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photoCell.swift; sourceTree = "<group>"; };
+		0B5C62951CDC6680008A11CE /* VCPhotoUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCPhotoUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +81,11 @@
 		0B24B0801CD9C1B9001EF497 /* recentPhotosExample */ = {
 			isa = PBXGroup;
 			children = (
+				0B5C62941CDC6680008A11CE /* Class */,
 				0B24B0811CD9C1B9001EF497 /* AppDelegate.swift */,
 				0B24B0831CD9C1B9001EF497 /* ViewController.swift */,
 				0B24B0851CD9C1B9001EF497 /* Main.storyboard */,
+				0B24B0A31CD9CC00001EF497 /* photoCell.swift */,
 				0B24B0881CD9C1B9001EF497 /* Assets.xcassets */,
 				0B24B08A1CD9C1B9001EF497 /* LaunchScreen.storyboard */,
 				0B24B08D1CD9C1B9001EF497 /* Info.plist */,
@@ -94,6 +100,14 @@
 				0B24B0981CD9C1B9001EF497 /* Info.plist */,
 			);
 			path = recentPhotosExampleTests;
+			sourceTree = "<group>";
+		};
+		0B5C62941CDC6680008A11CE /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0B5C62951CDC6680008A11CE /* VCPhotoUtils.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +160,7 @@
 				TargetAttributes = {
 					0B24B07D1CD9C1B9001EF497 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = U36B7685GW;
 					};
 					0B24B0911CD9C1B9001EF497 = {
 						CreatedOnToolsVersion = 7.3;
@@ -197,6 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B24B0A41CD9CC00001EF497 /* photoCell.swift in Sources */,
+				0B5C62961CDC6680008A11CE /* VCPhotoUtils.swift in Sources */,
 				0B24B0841CD9C1B9001EF497 /* ViewController.swift in Sources */,
 				0B24B0821CD9C1B9001EF497 /* AppDelegate.swift in Sources */,
 			);
@@ -258,7 +275,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -280,6 +298,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "dac048b0-eac6-46db-9c2e-4430e9b417f6";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -303,7 +322,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -318,6 +338,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "dac048b0-eac6-46db-9c2e-4430e9b417f6";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -327,10 +348,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = recentPhotosExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.giri.recentPhotosExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jambav.recentPhotosExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -338,10 +362,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = recentPhotosExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.giri.recentPhotosExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jambav.recentPhotosExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -388,6 +415,7 @@
 				0B24B09D1CD9C1B9001EF497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B24B09E1CD9C1B9001EF497 /* Build configuration list for PBXNativeTarget "recentPhotosExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +424,7 @@
 				0B24B0A01CD9C1B9001EF497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
