@@ -6,10 +6,6 @@ A photo utility library around Photos framework to observe for recent photos.
 
   ![](http://i.imgur.com/KotwyUX.jpg)
   
-# Demo
-  (wait for it to load)
-  ![](http://i.imgur.com/zAxVb6r.gifv)
-  
 # How to use 
   
   * Create an object for `VCPhotoUtils` class
@@ -21,6 +17,10 @@ A photo utility library around Photos framework to observe for recent photos.
   
   P.S: I've been a ObjC dev all this time, this is my first swift opensource project, i know i might not have used "swifty" syntax, so comments and suggestions welcome
   
+
+# To-Do
+  * More photo utilities like facebook. Grouping recent pictures based on time date and place, etc.
+
 # Licence
   MIT License
   
