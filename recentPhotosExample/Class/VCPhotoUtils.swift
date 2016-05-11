@@ -45,7 +45,7 @@ public class VCPhotoUtils
         }
         else
         {
-            if hasSeenRecentPhotos()
+            if hasSeenRecentPhotos() || !(getLastOpenedDateTime()?.isToday())!
             {
                 NSUserDefaults.standardUserDefaults().setObject(NSDate(), forKey:"lastOpenedDate")
                 NSUserDefaults.standardUserDefaults().synchronize()

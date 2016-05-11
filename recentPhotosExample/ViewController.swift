@@ -21,8 +21,7 @@ class ViewController: UIViewController,UICollectionViewDataSource
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        
+
         photosCollectionView.dataSource = self;
         photosCollectionView.delegate = self;
         
